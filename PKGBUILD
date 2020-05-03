@@ -97,7 +97,7 @@ ac_add_options --with-system-nss
 ac_add_options --enable-alsa
 ac_add_options --enable-jack
 ac_add_options --enable-startup-notification
-ac_add_options --enable-crashreporter
+ac_add_options --disable-crashreporter
 ac_add_options --disable-gconf
 ac_add_options --disable-updater
 ac_add_options --disable-tests
@@ -152,6 +152,7 @@ ac_add_options --enable-profile-use=cross
 ac_add_options --with-pgo-profile-path=${PWD@Q}/merged.profdata
 ac_add_options --with-pgo-jarlog=${PWD@Q}/jarlog
 END
+  LDFLAGS="$LDFLAGS,--no-keep-memory"
   ./mach build
 
   echo "Building symbol archive..."
