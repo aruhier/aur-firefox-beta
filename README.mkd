@@ -1,0 +1,9 @@
+AUR firefox-beta
+================
+
+Fork of the Archlinux AUR [firefox-beta package](https://aur.archlinux.org/packages/firefox-beta/) with small
+additions:
+* Enable PGO
+* Disable telemetry and crash reports
+* Fix the installation path to be able to install it side by side with firefox stable
+* Lower memory consumption during compilation (but makes it a bit slower)
