@@ -41,7 +41,7 @@ fi
 ## Set variable "enable_no_keep_memory" to: n to disable  (default)
 ##                                          y to enable (slower compilation, but compilation requires less memory)
 if [ -z ${enable_no_keep_memory+x} ]; then
-  enable_no_keep_memory=n
+  enable_no_keep_memory=y
 fi
 
 ### IMPORTANT: Do no edit below this line unless you know what you're doing
